@@ -2,12 +2,14 @@ package com.smorag.jdbc_hibernate_benchmark.benchmark.jdbc;
 
 import com.smorag.jdbc_hibernate_benchmark.entity.User;
 import com.smorag.jdbc_hibernate_benchmark.repository.jdbc.UserJdbcRepository;
+import com.smorag.jdbc_hibernate_benchmark.utils.BenchmarkChartGenerator;
 import com.smorag.jdbc_hibernate_benchmark.utils.CsvWriter;
 import com.smorag.jdbc_hibernate_benchmark.utils.DatabaseCleaner;
 import enums.QueryType;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +32,9 @@ public class JdbcUserBenchmark extends JdbcBaseBenchmark{
             String method = "INSERT";
             System.out.println("=====================\nJDBC\n=====================\nEntity: " + ENTITY_NAME + "\nIteration quantity: " + iterationQuantity + "\nList size: " + users.size() + "\nMethod: " + method + "\n----------------------");
             csvWriter.initColumnNames(COLUMN_NAMES);
+
+            List<Long> times = new ArrayList<>();
+
             for (int i = 0; i < iterationQuantity; i++) {
                 long start = System.currentTimeMillis();
                 userJdbcRepository.saveAll(users);
@@ -37,6 +42,13 @@ public class JdbcUserBenchmark extends JdbcBaseBenchmark{
                 csvWriter.appendRow((i+1), FRAMEWORK, ENTITY_NAME, QueryType.INSERT, users.size(), finish, "INSERT INTO users(first_name last_name email) VALUES (? ? ?)");
                 System.out.print((i + 1) + ". " + finish + "ms |");
                 DatabaseCleaner.clearDatabase(dataSource);
+                times.add(finish);
+            }
+
+            try {
+                BenchmarkChartGenerator.generate(FRAMEWORK, ENTITY_NAME, method, users.size(), times);
+            } catch (IOException ex) {
+                ex.printStackTrace();
             }
         } else {
             userJdbcRepository.saveAll(users);
@@ -47,6 +59,9 @@ public class JdbcUserBenchmark extends JdbcBaseBenchmark{
         List<User> usersFromDb = new ArrayList<>();
         csvWriter.initColumnNames(COLUMN_NAMES);
         saveAll(userList, 1, false);
+
+        List<Long> times = new ArrayList<>();
+
         if(measureTime) {
             String method = "SELECT";
             System.out.println("=====================\nJDBC\n=====================\nEntity: " + ENTITY_NAME + "\nIteration quantity: " + iterationQuantity + "\nList size: " + userList.size() + "\nMethod: " + method + "\n----------------------");
@@ -56,7 +71,15 @@ public class JdbcUserBenchmark extends JdbcBaseBenchmark{
                 long finish = System.currentTimeMillis() - start;
                 System.out.print((i + 1) + ". " + finish + "ms |");
                 csvWriter.appendRow((i+1), FRAMEWORK, ENTITY_NAME, QueryType.SELECT, userList.size(), finish, UserJdbcRepository.SELECT_SQL);
+                times.add(finish);
             }
+
+            try {
+                BenchmarkChartGenerator.generate(FRAMEWORK, ENTITY_NAME, method, userList.size(), times);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
             DatabaseCleaner.clearDatabase(dataSource);
         }
         return usersFromDb;
@@ -67,6 +90,9 @@ public class JdbcUserBenchmark extends JdbcBaseBenchmark{
             String method = "DELETE";
             System.out.println("=====================\nJDBC\n=====================\nEntity: " + ENTITY_NAME + "\nIteration quantity: " + iterationQuantity + "\nList size: " + users.size() + "\nMethod: " + method + "\n----------------------");
             csvWriter.initColumnNames(COLUMN_NAMES);
+
+            List<Long> times = new ArrayList<>();
+
             for (int i = 0; i < iterationQuantity; i++) {
                 saveAll(users, 1, false);
                 long start = System.currentTimeMillis();
@@ -74,6 +100,13 @@ public class JdbcUserBenchmark extends JdbcBaseBenchmark{
                 long finish = System.currentTimeMillis() - start;
                 System.out.print((i + 1) + ". " + finish + "ms |");
                 csvWriter.appendRow((i+1), FRAMEWORK, ENTITY_NAME, QueryType.DELETE, users.size(), finish, UserJdbcRepository.DELETE_SQL);
+                times.add(finish);
+            }
+
+            try {
+                BenchmarkChartGenerator.generate(FRAMEWORK, ENTITY_NAME, method, users.size(), times);
+            } catch (IOException ex) {
+                ex.printStackTrace();
             }
             DatabaseCleaner.clearDatabase(dataSource);
         }
@@ -86,13 +119,24 @@ public class JdbcUserBenchmark extends JdbcBaseBenchmark{
             System.out.println("=====================\nJDBC\n=====================\nEntity: " + ENTITY_NAME + "\nIteration quantity: " + iterationQuantity + "\nList size: " + users.size() + "\nMethod: " + method + "\n----------------------");
             csvWriter.initColumnNames(COLUMN_NAMES);
             saveAll(users, 1, false);
+
+            List<Long> times = new ArrayList<>();
+
             for (int i = 0; i < iterationQuantity; i++) {
                 long start = System.currentTimeMillis();
                 userJdbcRepository.updateAllFirstNames(i + 1);
                 long finish = System.currentTimeMillis() - start;
                 System.out.print((i + 1) + ". " + finish + "ms |");
                 csvWriter.appendRow((i+1), FRAMEWORK, ENTITY_NAME, QueryType.UPDATE, users.size(), finish, UserJdbcRepository.UPDATE_SQL);
+                times.add(finish);
             }
+
+            try {
+                BenchmarkChartGenerator.generate(FRAMEWORK, ENTITY_NAME, method, users.size(), times);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
             DatabaseCleaner.clearDatabase(dataSource);
         }
     }

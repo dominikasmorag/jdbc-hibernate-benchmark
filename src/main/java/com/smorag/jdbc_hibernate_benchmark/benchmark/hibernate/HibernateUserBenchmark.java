@@ -3,12 +3,14 @@ package com.smorag.jdbc_hibernate_benchmark.benchmark.hibernate;
 import com.smorag.jdbc_hibernate_benchmark.BenchmarkData;
 import com.smorag.jdbc_hibernate_benchmark.entity.User;
 import com.smorag.jdbc_hibernate_benchmark.repository.hibernate.UserJpaRepository;
+import com.smorag.jdbc_hibernate_benchmark.utils.BenchmarkChartGenerator;
 import com.smorag.jdbc_hibernate_benchmark.utils.CsvWriter;
 import com.smorag.jdbc_hibernate_benchmark.utils.DatabaseCleaner;
 import enums.QueryType;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +30,9 @@ public class HibernateUserBenchmark extends HibernateBaseBenchmark{
     public void saveAll(List<User> userList, int iterationQuantity, boolean measureTime) {
 
         String method = "saveAll()";
+
+        List<Long> times = new ArrayList<>();
+
         if (measureTime) {
             System.out.println("=====================\nHIBERNATE\n=====================\nEntity: " + ENTITY_NAME + "\nIteration quantity: " + iterationQuantity + "\nList size: " + userList.size() + "\nMethod: " + method + "\n----------------------");
             csvWriter.initColumnNames(COLUMN_NAMES);
@@ -39,7 +44,15 @@ public class HibernateUserBenchmark extends HibernateBaseBenchmark{
             System.out.print((i + 1) + ". " + finish + "ms |");
             csvWriter.appendRow((i+1), FRAMEWORK, ENTITY_NAME, QueryType.INSERT, userList.size(), finish, method);
             DatabaseCleaner.clearDatabase(dataSource);
+            times.add(finish);
         }
+
+            try {
+                BenchmarkChartGenerator.generate(FRAMEWORK, ENTITY_NAME, method, userList.size(), times);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
             } else {
                 DatabaseCleaner.clearDatabase(dataSource);
                 List<User> copyUsers = BenchmarkData.cloneUsers(userList);
@@ -50,6 +63,8 @@ public class HibernateUserBenchmark extends HibernateBaseBenchmark{
         public List<User> findAll(List<User> userList, int iterationQuantity, boolean measureTime) {
             List<User> users = new ArrayList<>();
             saveAll(userList, 1, false);
+
+            List<Long> times = new ArrayList<>();
 
             String method = "findAll()";
             if(measureTime) {
@@ -64,7 +79,15 @@ public class HibernateUserBenchmark extends HibernateBaseBenchmark{
 
                 System.out.print((i + 1) + ". " + finish + "ms |");
                 csvWriter.appendRow((i+1), FRAMEWORK, ENTITY_NAME, QueryType.SELECT, userList.size(), finish, method);
+                times.add(finish);
                 }
+
+                try {
+                    BenchmarkChartGenerator.generate(FRAMEWORK, ENTITY_NAME, method, userList.size(), times);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+
                 DatabaseCleaner.clearDatabase(dataSource);
             }
             else {
@@ -81,6 +104,8 @@ public class HibernateUserBenchmark extends HibernateBaseBenchmark{
 
                 csvWriter.initColumnNames(COLUMN_NAMES);
 
+                List<Long> times = new ArrayList<>();
+
                 for (int i = 0; i < iterationQuantity; i++) {
                     List<User> copyUsers = BenchmarkData.cloneUsers(userList);
                     saveAll(copyUsers, 1, false);
@@ -93,6 +118,13 @@ public class HibernateUserBenchmark extends HibernateBaseBenchmark{
                     long finish = System.currentTimeMillis() - start;
                     System.out.print((i + 1) + ". " + finish + "ms |");
                     csvWriter.appendRow((i+1), FRAMEWORK, ENTITY_NAME, QueryType.DELETE, userList.size(), finish, method);
+                    times.add(finish);
+                }
+
+                try {
+                    BenchmarkChartGenerator.generate(FRAMEWORK, ENTITY_NAME, method, userList.size(), times);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
             }
             DatabaseCleaner.clearDatabase((dataSource));
@@ -100,6 +132,9 @@ public class HibernateUserBenchmark extends HibernateBaseBenchmark{
 
         public void updateAllFirstNames(List<User> userList, int iterationQuantity, boolean measureTime) {
             String method = "updateAllFirstNames()";
+
+            List<Long> times = new ArrayList<>();
+
             if(measureTime) {
                 System.out.println("=====================\nHIBERNATE\n=====================\nEntity: " + ENTITY_NAME + "\nIteration quantity: " + iterationQuantity + "\nList size: " + userList.size() + "\nMethod: " + method + "\nQuery: UPDATE User u SET u.firstName = :firstName\n----------------------");
 
@@ -114,7 +149,14 @@ public class HibernateUserBenchmark extends HibernateBaseBenchmark{
                     long finish = System.currentTimeMillis() - start;
                     System.out.print((i + 1) + ". " + finish + "ms |");
                     csvWriter.appendRow((i+1), FRAMEWORK, ENTITY_NAME, QueryType.UPDATE, userList.size(), finish, "UPDATE User u SET u.firstName = :firstName");
+                    times.add(finish);
             }
+
+                try {
+                    BenchmarkChartGenerator.generate(FRAMEWORK, ENTITY_NAME, method, userList.size(), times);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             DatabaseCleaner.clearDatabase(dataSource);
             }
         }
