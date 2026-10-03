@@ -1,0 +1,768 @@
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),462
+2,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),395
+3,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),353
+4,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),355
+5,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),352
+6,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),794
+7,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),340
+8,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),350
+9,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),363
+10,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),339
+11,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),335
+12,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),340
+13,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),374
+14,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),337
+15,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),347
+16,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),512
+17,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),357
+18,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),347
+19,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),382
+20,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),356
+21,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),338
+22,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),370
+23,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),344
+24,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),387
+25,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),333
+26,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),344
+27,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),318
+28,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),351
+29,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),389
+30,JDBC,Order,INSERT,10000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),361
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,INSERT,10000,saveAll(),8078
+2,HIBERNATE,Order,INSERT,10000,saveAll(),7953
+3,HIBERNATE,Order,INSERT,10000,saveAll(),7611
+4,HIBERNATE,Order,INSERT,10000,saveAll(),7801
+5,HIBERNATE,Order,INSERT,10000,saveAll(),8064
+6,HIBERNATE,Order,INSERT,10000,saveAll(),8223
+7,HIBERNATE,Order,INSERT,10000,saveAll(),7466
+8,HIBERNATE,Order,INSERT,10000,saveAll(),7866
+9,HIBERNATE,Order,INSERT,10000,saveAll(),7699
+10,HIBERNATE,Order,INSERT,10000,saveAll(),7838
+11,HIBERNATE,Order,INSERT,10000,saveAll(),7436
+12,HIBERNATE,Order,INSERT,10000,saveAll(),7784
+13,HIBERNATE,Order,INSERT,10000,saveAll(),7586
+14,HIBERNATE,Order,INSERT,10000,saveAll(),8143
+15,HIBERNATE,Order,INSERT,10000,saveAll(),7541
+16,HIBERNATE,Order,INSERT,10000,saveAll(),7852
+17,HIBERNATE,Order,INSERT,10000,saveAll(),7976
+18,HIBERNATE,Order,INSERT,10000,saveAll(),7738
+19,HIBERNATE,Order,INSERT,10000,saveAll(),7590
+20,HIBERNATE,Order,INSERT,10000,saveAll(),7822
+21,HIBERNATE,Order,INSERT,10000,saveAll(),8251
+22,HIBERNATE,Order,INSERT,10000,saveAll(),9760
+23,HIBERNATE,Order,INSERT,10000,saveAll(),7717
+24,HIBERNATE,Order,INSERT,10000,saveAll(),8311
+25,HIBERNATE,Order,INSERT,10000,saveAll(),8301
+26,HIBERNATE,Order,INSERT,10000,saveAll(),7804
+27,HIBERNATE,Order,INSERT,10000,saveAll(),7489
+28,HIBERNATE,Order,INSERT,10000,saveAll(),7907
+29,HIBERNATE,Order,INSERT,10000,saveAll(),7659
+30,HIBERNATE,Order,INSERT,10000,saveAll(),7981
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+2,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+3,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+4,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+5,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+6,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+7,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+8,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+9,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+10,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,3
+11,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,4
+12,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+13,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+14,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+15,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+16,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+17,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+18,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+19,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+20,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+21,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+22,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+23,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+24,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+25,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+26,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+27,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+28,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+29,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,2
+30,JDBC,Order,SELECT,10000,SELECT * FROM ORDERS,1
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,272
+2,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,226
+3,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,204
+4,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,186
+5,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,187
+6,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,196
+7,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,204
+8,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,205
+9,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,201
+10,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,194
+11,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,176
+12,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,197
+13,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,183
+14,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,180
+15,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,189
+16,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,183
+17,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,172
+18,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,181
+19,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,196
+20,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,189
+21,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,179
+22,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,181
+23,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,190
+24,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,213
+25,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,182
+26,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,211
+27,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,180
+28,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,209
+29,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,173
+30,HIBERNATE,Order,SELECT,10000,findAll() fetchType = eager,210
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,3
+2,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+3,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+4,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+5,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+6,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+7,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+8,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+9,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+10,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+11,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+12,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+13,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+14,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+15,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+16,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+17,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+18,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+19,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+20,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+21,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+22,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+23,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+24,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+25,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+26,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+27,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+28,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,0
+29,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+30,JDBC,Order,UPDATE,10000,UPDATE orders SET status = ?,1
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,543
+2,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,19
+3,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,19
+4,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,23
+5,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,20
+6,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,23
+7,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,22
+8,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,24
+9,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,27
+10,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,19
+11,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,22
+12,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+13,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+14,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,19
+15,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,17
+16,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,19
+17,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+18,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,19
+19,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,19
+20,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+21,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,23
+22,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+23,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+24,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,20
+25,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,20
+26,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,21
+27,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+28,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+29,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,18
+30,HIBERNATE,Order,UPDATE,10000,UPDATE Order o SET o.status = :status,20
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,232
+2,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,3
+3,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+4,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+5,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+6,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+7,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+8,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+9,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+10,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+11,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+12,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+13,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+14,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+15,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+16,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+17,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+18,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+19,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+20,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+21,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+22,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+23,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+24,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,4
+25,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+26,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,1
+27,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+28,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+29,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+30,JDBC,Order,DELETE,10000,DELETE FROM ORDERS,2
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,DELETE,10000,deleteAll(),2829
+2,HIBERNATE,Order,DELETE,10000,deleteAll(),2776
+3,HIBERNATE,Order,DELETE,10000,deleteAll(),2733
+4,HIBERNATE,Order,DELETE,10000,deleteAll(),2801
+5,HIBERNATE,Order,DELETE,10000,deleteAll(),2729
+6,HIBERNATE,Order,DELETE,10000,deleteAll(),2481
+7,HIBERNATE,Order,DELETE,10000,deleteAll(),2801
+8,HIBERNATE,Order,DELETE,10000,deleteAll(),2687
+9,HIBERNATE,Order,DELETE,10000,deleteAll(),2538
+10,HIBERNATE,Order,DELETE,10000,deleteAll(),2501
+11,HIBERNATE,Order,DELETE,10000,deleteAll(),2484
+12,HIBERNATE,Order,DELETE,10000,deleteAll(),2475
+13,HIBERNATE,Order,DELETE,10000,deleteAll(),2521
+14,HIBERNATE,Order,DELETE,10000,deleteAll(),2569
+15,HIBERNATE,Order,DELETE,10000,deleteAll(),2522
+16,HIBERNATE,Order,DELETE,10000,deleteAll(),2486
+17,HIBERNATE,Order,DELETE,10000,deleteAll(),2455
+18,HIBERNATE,Order,DELETE,10000,deleteAll(),2642
+19,HIBERNATE,Order,DELETE,10000,deleteAll(),2453
+20,HIBERNATE,Order,DELETE,10000,deleteAll(),2517
+21,HIBERNATE,Order,DELETE,10000,deleteAll(),2582
+22,HIBERNATE,Order,DELETE,10000,deleteAll(),2611
+23,HIBERNATE,Order,DELETE,10000,deleteAll(),2614
+24,HIBERNATE,Order,DELETE,10000,deleteAll(),2508
+25,HIBERNATE,Order,DELETE,10000,deleteAll(),2718
+26,HIBERNATE,Order,DELETE,10000,deleteAll(),2574
+27,HIBERNATE,Order,DELETE,10000,deleteAll(),2475
+28,HIBERNATE,Order,DELETE,10000,deleteAll(),2809
+29,HIBERNATE,Order,DELETE,10000,deleteAll(),2767
+30,HIBERNATE,Order,DELETE,10000,deleteAll(),2766
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1780
+2,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1850
+3,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1663
+4,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1679
+5,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1603
+6,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1660
+7,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1780
+8,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1605
+9,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1792
+10,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1879
+11,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1845
+12,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1821
+13,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1871
+14,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),2127
+15,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1855
+16,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1746
+17,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1603
+18,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1977
+19,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1949
+20,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1617
+21,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1715
+22,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1716
+23,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1866
+24,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1580
+25,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1897
+26,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1592
+27,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1794
+28,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),2071
+29,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1745
+30,JDBC,Order,INSERT,50000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),1799
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,INSERT,50000,saveAll(),37925
+2,HIBERNATE,Order,INSERT,50000,saveAll(),37971
+3,HIBERNATE,Order,INSERT,50000,saveAll(),37659
+4,HIBERNATE,Order,INSERT,50000,saveAll(),37051
+5,HIBERNATE,Order,INSERT,50000,saveAll(),37253
+6,HIBERNATE,Order,INSERT,50000,saveAll(),36968
+7,HIBERNATE,Order,INSERT,50000,saveAll(),36447
+8,HIBERNATE,Order,INSERT,50000,saveAll(),36897
+9,HIBERNATE,Order,INSERT,50000,saveAll(),38859
+10,HIBERNATE,Order,INSERT,50000,saveAll(),37122
+11,HIBERNATE,Order,INSERT,50000,saveAll(),36798
+12,HIBERNATE,Order,INSERT,50000,saveAll(),37641
+13,HIBERNATE,Order,INSERT,50000,saveAll(),36765
+14,HIBERNATE,Order,INSERT,50000,saveAll(),36931
+15,HIBERNATE,Order,INSERT,50000,saveAll(),37766
+16,HIBERNATE,Order,INSERT,50000,saveAll(),37733
+17,HIBERNATE,Order,INSERT,50000,saveAll(),37452
+18,HIBERNATE,Order,INSERT,50000,saveAll(),39944
+19,HIBERNATE,Order,INSERT,50000,saveAll(),37005
+20,HIBERNATE,Order,INSERT,50000,saveAll(),37129
+21,HIBERNATE,Order,INSERT,50000,saveAll(),38003
+22,HIBERNATE,Order,INSERT,50000,saveAll(),37894
+23,HIBERNATE,Order,INSERT,50000,saveAll(),37175
+24,HIBERNATE,Order,INSERT,50000,saveAll(),50775
+25,HIBERNATE,Order,INSERT,50000,saveAll(),38241
+26,HIBERNATE,Order,INSERT,50000,saveAll(),38309
+27,HIBERNATE,Order,INSERT,50000,saveAll(),37407
+28,HIBERNATE,Order,INSERT,50000,saveAll(),37922
+29,HIBERNATE,Order,INSERT,50000,saveAll(),37774
+30,HIBERNATE,Order,INSERT,50000,saveAll(),36945
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+2,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+3,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+4,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+5,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+6,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+7,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+8,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+9,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+10,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+11,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+12,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+13,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+14,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+15,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+16,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+17,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+18,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+19,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+20,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+21,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+22,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+23,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+24,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+25,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+26,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+27,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,3
+28,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+29,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,1
+30,JDBC,Order,SELECT,50000,SELECT * FROM ORDERS,2
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4024
+2,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4045
+3,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3968
+4,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3777
+5,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4119
+6,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3769
+7,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3957
+8,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4050
+9,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3788
+10,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3826
+11,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3937
+12,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3785
+13,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4111
+14,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3999
+15,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4224
+16,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3990
+17,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3912
+18,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3771
+19,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4048
+20,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3844
+21,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3866
+22,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3894
+23,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4021
+24,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4063
+25,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3948
+26,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3761
+27,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,4083
+28,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3766
+29,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3799
+30,HIBERNATE,Order,SELECT,50000,findAll() fetchType = eager,3789
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,2
+2,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+3,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+4,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+5,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+6,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+7,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+8,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+9,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+10,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+11,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+12,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+13,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+14,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+15,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+16,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+17,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+18,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+19,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+20,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+21,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,0
+22,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,2
+23,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+24,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+25,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+26,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+27,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+28,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+29,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+30,JDBC,Order,UPDATE,50000,UPDATE orders SET status = ?,1
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,2614
+2,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,84
+3,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,101
+4,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,86
+5,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,111
+6,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,99
+7,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,114
+8,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,121
+9,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,94
+10,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,86
+11,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,91
+12,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,85
+13,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,86
+14,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,84
+15,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,85
+16,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,86
+17,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,85
+18,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,89
+19,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,86
+20,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,92
+21,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,87
+22,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,88
+23,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,98
+24,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,81
+25,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,84
+26,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,87
+27,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,88
+28,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,93
+29,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,84
+30,HIBERNATE,Order,UPDATE,50000,UPDATE Order o SET o.status = :status,103
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,1139
+2,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+3,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+4,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+5,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,3
+6,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+7,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+8,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,4
+9,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,3
+10,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,3
+11,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+12,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,3
+13,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+14,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+15,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+16,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+17,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+18,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+19,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+20,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+21,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+22,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+23,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,4
+24,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+25,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+26,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,3
+27,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+28,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,1
+29,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+30,JDBC,Order,DELETE,50000,DELETE FROM ORDERS,2
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,DELETE,50000,deleteAll(),15445
+2,HIBERNATE,Order,DELETE,50000,deleteAll(),15027
+3,HIBERNATE,Order,DELETE,50000,deleteAll(),15147
+4,HIBERNATE,Order,DELETE,50000,deleteAll(),15354
+5,HIBERNATE,Order,DELETE,50000,deleteAll(),14966
+6,HIBERNATE,Order,DELETE,50000,deleteAll(),15223
+7,HIBERNATE,Order,DELETE,50000,deleteAll(),15853
+8,HIBERNATE,Order,DELETE,50000,deleteAll(),14310
+9,HIBERNATE,Order,DELETE,50000,deleteAll(),15099
+10,HIBERNATE,Order,DELETE,50000,deleteAll(),14199
+11,HIBERNATE,Order,DELETE,50000,deleteAll(),20741
+12,HIBERNATE,Order,DELETE,50000,deleteAll(),18856
+13,HIBERNATE,Order,DELETE,50000,deleteAll(),18342
+14,HIBERNATE,Order,DELETE,50000,deleteAll(),18337
+15,HIBERNATE,Order,DELETE,50000,deleteAll(),18672
+16,HIBERNATE,Order,DELETE,50000,deleteAll(),17727
+17,HIBERNATE,Order,DELETE,50000,deleteAll(),17638
+18,HIBERNATE,Order,DELETE,50000,deleteAll(),15775
+19,HIBERNATE,Order,DELETE,50000,deleteAll(),15912
+20,HIBERNATE,Order,DELETE,50000,deleteAll(),15627
+21,HIBERNATE,Order,DELETE,50000,deleteAll(),15819
+22,HIBERNATE,Order,DELETE,50000,deleteAll(),15832
+23,HIBERNATE,Order,DELETE,50000,deleteAll(),15935
+24,HIBERNATE,Order,DELETE,50000,deleteAll(),15534
+25,HIBERNATE,Order,DELETE,50000,deleteAll(),18232
+26,HIBERNATE,Order,DELETE,50000,deleteAll(),16184
+27,HIBERNATE,Order,DELETE,50000,deleteAll(),15872
+28,HIBERNATE,Order,DELETE,50000,deleteAll(),15740
+29,HIBERNATE,Order,DELETE,50000,deleteAll(),15804
+30,HIBERNATE,Order,DELETE,50000,deleteAll(),16065
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3379
+2,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3807
+3,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),4143
+4,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3925
+5,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3602
+6,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3787
+7,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3793
+8,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3266
+9,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3941
+10,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3456
+11,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3907
+12,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3496
+13,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3598
+14,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),4035
+15,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3959
+16,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3845
+17,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3394
+18,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3685
+19,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3657
+20,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3285
+21,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3697
+22,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),4027
+23,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3818
+24,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3562
+25,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3590
+26,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3971
+27,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3539
+28,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3317
+29,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),3832
+30,JDBC,Order,INSERT,100000,INSERT INTO orders (user_id total_amount status) VALUES (? ? ?),4286
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,INSERT,100000,saveAll(),84127
+2,HIBERNATE,Order,INSERT,100000,saveAll(),82308
+3,HIBERNATE,Order,INSERT,100000,saveAll(),83143
+4,HIBERNATE,Order,INSERT,100000,saveAll(),84597
+5,HIBERNATE,Order,INSERT,100000,saveAll(),82191
+6,HIBERNATE,Order,INSERT,100000,saveAll(),81727
+7,HIBERNATE,Order,INSERT,100000,saveAll(),82689
+8,HIBERNATE,Order,INSERT,100000,saveAll(),81282
+9,HIBERNATE,Order,INSERT,100000,saveAll(),81703
+10,HIBERNATE,Order,INSERT,100000,saveAll(),82420
+11,HIBERNATE,Order,INSERT,100000,saveAll(),93191
+12,HIBERNATE,Order,INSERT,100000,saveAll(),83575
+13,HIBERNATE,Order,INSERT,100000,saveAll(),82752
+14,HIBERNATE,Order,INSERT,100000,saveAll(),86665
+15,HIBERNATE,Order,INSERT,100000,saveAll(),84185
+16,HIBERNATE,Order,INSERT,100000,saveAll(),82800
+17,HIBERNATE,Order,INSERT,100000,saveAll(),82489
+18,HIBERNATE,Order,INSERT,100000,saveAll(),85183
+19,HIBERNATE,Order,INSERT,100000,saveAll(),88671
+20,HIBERNATE,Order,INSERT,100000,saveAll(),83631
+21,HIBERNATE,Order,INSERT,100000,saveAll(),82316
+22,HIBERNATE,Order,INSERT,100000,saveAll(),84219
+23,HIBERNATE,Order,INSERT,100000,saveAll(),82807
+24,HIBERNATE,Order,INSERT,100000,saveAll(),104072
+25,HIBERNATE,Order,INSERT,100000,saveAll(),101628
+26,HIBERNATE,Order,INSERT,100000,saveAll(),95484
+27,HIBERNATE,Order,INSERT,100000,saveAll(),95357
+28,HIBERNATE,Order,INSERT,100000,saveAll(),92577
+29,HIBERNATE,Order,INSERT,100000,saveAll(),83729
+30,HIBERNATE,Order,INSERT,100000,saveAll(),77888
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+2,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+3,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+4,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+5,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+6,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+7,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+8,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+9,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+10,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+11,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+12,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+13,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+14,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+15,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+16,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+17,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+18,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+19,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+20,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+21,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+22,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+23,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+24,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+25,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,1
+26,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+27,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+28,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+29,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,2
+30,JDBC,Order,SELECT,100000,SELECT * FROM ORDERS,3
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8588
+2,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8392
+3,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,9773
+4,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8847
+5,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8388
+6,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8567
+7,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8421
+8,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8368
+9,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8405
+10,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8383
+11,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8481
+12,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8397
+13,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8232
+14,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8423
+15,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8405
+16,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8381
+17,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8291
+18,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8341
+19,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8419
+20,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8427
+21,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8348
+22,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8134
+23,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8420
+24,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8705
+25,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8913
+26,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8689
+27,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8266
+28,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8433
+29,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8486
+30,HIBERNATE,Order,SELECT,100000,findAll() fetchType = eager,8429
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,3
+2,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+3,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+4,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+5,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+6,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+7,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+8,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+9,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+10,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+11,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+12,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+13,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+14,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+15,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+16,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+17,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+18,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+19,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+20,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+21,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+22,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+23,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+24,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+25,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+26,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+27,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+28,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+29,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,0
+30,JDBC,Order,UPDATE,100000,UPDATE orders SET status = ?,1
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,5320
+2,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,213
+3,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,242
+4,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,244
+5,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,248
+6,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,248
+7,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,231
+8,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,234
+9,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,230
+10,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,230
+11,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,235
+12,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,234
+13,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,232
+14,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,236
+15,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,193
+16,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,184
+17,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,170
+18,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,165
+19,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,174
+20,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,167
+21,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,175
+22,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,170
+23,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,166
+24,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,183
+25,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,173
+26,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,185
+27,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,167
+28,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,169
+29,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,167
+30,HIBERNATE,Order,UPDATE,100000,UPDATE Order o SET o.status = :status,164
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2239
+2,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+3,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+4,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+5,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+6,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+7,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,4
+8,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+9,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+10,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+11,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+12,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+13,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+14,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+15,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+16,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+17,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+18,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+19,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+20,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+21,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+22,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+23,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+24,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+25,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+26,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+27,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+28,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+29,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,2
+30,JDBC,Order,DELETE,100000,DELETE FROM ORDERS,3
+,
+iteration, framework, entity, operation, records, query/method, time_ms
+1,HIBERNATE,Order,DELETE,100000,deleteAll(),31643
+2,HIBERNATE,Order,DELETE,100000,deleteAll(),30830
+3,HIBERNATE,Order,DELETE,100000,deleteAll(),30956
+4,HIBERNATE,Order,DELETE,100000,deleteAll(),32623
+5,HIBERNATE,Order,DELETE,100000,deleteAll(),30410
+6,HIBERNATE,Order,DELETE,100000,deleteAll(),30678
+7,HIBERNATE,Order,DELETE,100000,deleteAll(),30599
+8,HIBERNATE,Order,DELETE,100000,deleteAll(),30441
+9,HIBERNATE,Order,DELETE,100000,deleteAll(),30531
+10,HIBERNATE,Order,DELETE,100000,deleteAll(),30527
+11,HIBERNATE,Order,DELETE,100000,deleteAll(),29701
+12,HIBERNATE,Order,DELETE,100000,deleteAll(),31947
+13,HIBERNATE,Order,DELETE,100000,deleteAll(),32060
+14,HIBERNATE,Order,DELETE,100000,deleteAll(),31759
+15,HIBERNATE,Order,DELETE,100000,deleteAll(),32631
+16,HIBERNATE,Order,DELETE,100000,deleteAll(),32155
+17,HIBERNATE,Order,DELETE,100000,deleteAll(),31132
+18,HIBERNATE,Order,DELETE,100000,deleteAll(),31067
+19,HIBERNATE,Order,DELETE,100000,deleteAll(),35783
+20,HIBERNATE,Order,DELETE,100000,deleteAll(),32068
+21,HIBERNATE,Order,DELETE,100000,deleteAll(),31214
+22,HIBERNATE,Order,DELETE,100000,deleteAll(),31591
+23,HIBERNATE,Order,DELETE,100000,deleteAll(),30547
+24,HIBERNATE,Order,DELETE,100000,deleteAll(),30988
+25,HIBERNATE,Order,DELETE,100000,deleteAll(),31692
+26,HIBERNATE,Order,DELETE,100000,deleteAll(),31731
+27,HIBERNATE,Order,DELETE,100000,deleteAll(),31373
+28,HIBERNATE,Order,DELETE,100000,deleteAll(),31269
+29,HIBERNATE,Order,DELETE,100000,deleteAll(),31731
+30,HIBERNATE,Order,DELETE,100000,deleteAll(),31385

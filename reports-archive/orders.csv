@@ -1,0 +1,54 @@
+INSERT, framework,,
+iteration, framework,HIBERNATE,JDBC
+1,,7904,373
+2,,7591,365
+3,,10890,357
+4,,8950,395
+5,,8437,429
+iteration,,,
+batch dla jdbc,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+SELECT, framework,,
+iteration, framework,HIBERNATE,JDBC
+1,,294,208
+2,,248,174
+3,,242,147
+4,,279,166
+5,,238,147
+iteration,,,
+N+1 problem dla jdbc I hibernate,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+UPDATE, framework,,
+iteration, framework,HIBERNATE,JDBC
+1,,824,582
+2,,20,25
+3,,19,26
+4,,26,21
+5,,26,23
+iteration,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+DELETE, framework,,
+iteration, framework,HIBERNATE,JDBC
+1,,227,549
+2,,228,196
+3,,209,243
+4,,181,210
+5,,213,243
+iteration,,,
+hibernate – delete in batch,,,
