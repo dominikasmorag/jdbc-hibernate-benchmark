@@ -7,6 +7,11 @@ import java.sql.Statement;
 
 public class DatabaseCleaner {
 
+    /**
+     * Truncates each of tables
+     *
+     * @param dataSource datasoure in which database should be cleared
+     */
     public static void clearDatabase(DataSource dataSource) {
 
         try (Connection connection = dataSource.getConnection();

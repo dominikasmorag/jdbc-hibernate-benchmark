@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+// wu - załączniki - badania, excel
+// demo podczas obrony - filmik z zainicjalizowaniem funkcji pomiaru czasów -> wyniki rezultatów -> wykresy ->załączniki - w ramach załączników lin do zew. repozytorium  (drive)
 @Component
 public class BenchmarkRunner {
 

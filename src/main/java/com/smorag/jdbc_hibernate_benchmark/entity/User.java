@@ -7,6 +7,9 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+
+// Analiza danych - strategy
+// batchowanie i fetch type w przypadku złożoności (FK) - N+1
 @NoArgsConstructor
 @Getter
 @Setter

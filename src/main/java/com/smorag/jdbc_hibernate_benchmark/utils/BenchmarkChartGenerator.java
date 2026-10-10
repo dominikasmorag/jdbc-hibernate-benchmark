@@ -10,6 +10,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+// wykres z wieksza iloscia danych
+// opis wykorzystanych narzedzi
 public class BenchmarkChartGenerator {
 
     private static final String CHART_DIR = "benchmark-results/charts";
